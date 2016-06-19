@@ -116,8 +116,9 @@
 			  			<tr ng-repeat="customer in data | filter:{is_served:0}">
 			  				<td>{{$index+1}}</td>
 			  				<td>{{customerTypes[customer.customer_type]}}</td>
+			  				<td ng-if="customer.name">{{customer.name}}</td>
+			  				<td ng-if="!customer.name">Anonymous</td>
 			  				<td>{{services[customer.service_type]}}</td>
-			  				<td>{{customer.name}}</td>
 			  				<td>{{customer.queued_at}}</td>
 			  				<td><button class="btn btn-primary btn-small" ng-click="serve(customer.id)">Serve</button></td>
 			  			</tr>
