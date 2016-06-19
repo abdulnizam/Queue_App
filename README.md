@@ -21,3 +21,5 @@ CREATE TABLE `customers` (
 
 
 Execute the query to run the App.
+
+Update the /app/Config/AppConfig.php 
