@@ -19,7 +19,8 @@ CREATE TABLE `customers` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
+Steps
 
-Execute the query to run the App.
+1) Execute the query to run the App.
 
-Update the /app/Config/AppConfig.php 
+2) Update the /app/Config/AppConfig.php 
