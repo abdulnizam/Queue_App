@@ -7,7 +7,10 @@ if(isset($_REQUEST['service_type'])){
 	$data['customer_type']  =$_REQUEST['customer_type'];
 	$data['name']  = $_REQUEST['name'];
 	
-	$customerId = addCustomer($data);
+	$customer = new queueAppModel();
+
+	$customerId = $customer->addCustomer($data);
+
 	if($customerId){
 		$result = array("success"=>1,"message"=>"Customer record added successfully !!!", "customer_id" => $customerId);
 	}

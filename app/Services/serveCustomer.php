@@ -3,7 +3,8 @@ require_once '../Model/QueueAppModel.php';
 
 if(isset($_REQUEST['id'])){
 	$id = $_REQUEST['id'];
-	$flag = serveCustomer($id);
+	$result = new QueueAppModel();
+	$flag = $result->serveCustomer($id);
 	if($flag){
 		$result = array("success"=>1,"message"=>"Customer record updated successfully !!!", "customer_id" => $id);
 	}
