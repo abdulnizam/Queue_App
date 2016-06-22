@@ -54,9 +54,6 @@ class queueAppModel
      */
     function setPriority($id, $priority)
     {
-        // $updateFlag = mysql_query("update `customers` set `priority` = '".mysql_real_escape_string($priority)."' where `id` = '".mysql_real_escape_string($id)."'");
-        // return $updateFlag;
-        
         $sql  = "update `customers` set `priority` = :priority where `id` = :id ";
         $stmt = $this->_db->prepare($sql);
         $stmt->bindParam(":priority", intval($priority), PDO::PARAM_INT);
