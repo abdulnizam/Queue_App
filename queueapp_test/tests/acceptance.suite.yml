@@ -1,0 +1,162 @@
+# Codeception Test Suite Configuration
+
+# suite for acceptance tests.
+# perform tests in browser using the Selenium-like tools.
+# powered by Mink (http://mink.behat.org).
+# (tip: that's what your customer will see).
+# (tip: test your ajax and javascript by one of Mink drivers).
+
+# RUN `build` COMMAND AFTER ADDING/REMOVING MODULES.
+
+class_name: WebGuy
+modules:
+    enabled:
+        - WebDriver
+        - WebHelper
+    config:
+        WebDriver:
+            url: "http://localhost/queueapp"
+            restart: true
+            browser: firefox
+env:
+    local_phantomjs:
+        modules:
+            config:
+                WebDriver:
+                    browser: phantomjs
+                    window_size: maximize
+                    capabilities:
+                        phantomjs.cli.args: ['--ignore-ssl-errors=true']
+                        webStorageEnabled: true
+    local_firefox:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'firefox'
+    local_ie:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'internetexplorer'
+    local_chrome:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'chrome'
+                    capabilities:
+                        'platform': 'ANY'
+                        'browserName': 'chrome'
+                        'chromeOptions':
+                            'args': []
+                            'extensions': []
+                        'version': ''
+                        'chrome.switches': []
+    bs_osx_safari:
+        modules:
+            config:
+                WebDriver:
+                    host: 'hub.browserstack.com'
+                    port: 80
+                    browser: 'safari'
+                    capabilities:
+                        'platform': 'MAC'
+                        'os': 'OS X'
+                        'os_version': 'Mavericks'
+    bs_osx_firefox:
+        modules:
+            config:
+                WebDriver:
+                    host: 'hub.browserstack.com'
+                    port: 80
+                    browser: 'firefox'
+                    capabilities:
+                        'platform': 'MAC'
+                        'os': 'OS X'
+                        'os_version': 'Mavericks'
+    bs_osx_chrome:
+        modules:
+            config:
+                WebDriver:
+                    host: 'hub.browserstack.com'
+                    port: 80
+                    browser: 'chrome'
+                    capabilities:
+                        'platform': 'MAC'
+                        'os': 'OS X'
+                        'os_version': 'Mavericks'
+    bs_win7_safari:
+        modules:
+            config:
+                WebDriver:
+                    host: 'hub.browserstack.com'
+                    port: 80
+                    browser: 'safari'
+                    capabilities:
+                        'platform': 'WINDOWS'
+                        'os': 'Windows'
+                        'os_version': '7'
+    bs_win7_firefox:
+        modules:
+            config:
+                WebDriver:
+                    host: 'hub.browserstack.com'
+                    port: 80
+                    browser: 'firefox'
+                    capabilities:
+                        'platform': 'WINDOWS'
+                        'os': 'Windows'
+                        'os_version': '7'
+    bs_win7_chrome:
+        modules:
+            config:
+                WebDriver:
+                    host: 'hub.browserstack.com'
+                    port: 80
+                    browser: 'chrome'
+                    capabilities:
+                        'platform': 'WINDOWS'
+                        'os': 'Windows'
+                        'os_version': '7'
+    bs_win7_ie8:
+        modules:
+            config:
+                WebDriver:
+                    host: 'hub.browserstack.com'
+                    port: 80
+                    browser: 'IE'
+                    capabilities:
+                        'platform': 'WINDOWS'
+                        'os': 'Windows'
+                        'os_version': '7'
+                        'browser_version': '8.0'
+    bs_win7_ie9:
+            modules:
+                config:
+                    WebDriver:
+                        host: 'hub.browserstack.com'
+                        port: 80
+                        browser: 'IE'
+                        capabilities:
+                            'platform': 'WINDOWS'
+                            'os': 'Windows'
+                            'os_version': '7'
+                            'browser_version': '9.0'
+    bs_win7_ie10:
+        modules:
+            config:
+                WebDriver:
+                    host: 'hub.browserstack.com'
+                    port: 80
+                    browser: 'IE'
+                    capabilities:
+                        'platform': 'WINDOWS'
+                        'os': 'Windows'
+                        'os_version': '7'
+                        'browser_version': '10.0'
+coverage:
+    enabled: true
+    remote: true
+paths:
+    log: _log
+settings:
+    colors: true
