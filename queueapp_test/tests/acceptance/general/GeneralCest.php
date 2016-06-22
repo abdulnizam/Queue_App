@@ -1,6 +1,6 @@
 <?php
 
-use QueueApp\LoginControllerPage;
+use QueueApp\GeneralControllerPage;
 
 
 /**

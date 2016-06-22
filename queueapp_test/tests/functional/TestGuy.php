@@ -6,7 +6,7 @@
 
 namespace QueueApp;
 use Codeception\Module\Filesystem;
-use FsSs\Codeception\Module\TestHelper;
+use QueueApp\Codeception\Module\TestHelper;
 
 /**
  * Inherited Methods

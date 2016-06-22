@@ -4,9 +4,9 @@
 // You should not change it manually as it will be overwritten on next build
 // @codingStandardsIgnoreFile
 
-namespace FsSs;
+namespace QueueApp;
 use Codeception\Module\WebDriver;
-use FsSs\Codeception\Module\WebHelper;
+use QueueApp\Codeception\Module\WebHelper;
 
 /**
  * Inherited Methods
@@ -2123,7 +2123,7 @@ class WebGuy extends \Codeception\Actor
      * [!] Method is generated. Documentation taken from corresponding module.
      *
      *
-     * @see \FsSs\Codeception\Module\WebHelper::amOnPageEx()
+     * @see \QueueApp\Codeception\Module\WebHelper::amOnPageEx()
      */
     public function amOnPageEx($page) {
         return $this->scenario->runStep(new \Codeception\Step\Condition('amOnPageEx', func_get_args()));
@@ -2134,7 +2134,7 @@ class WebGuy extends \Codeception\Actor
      * [!] Method is generated. Documentation taken from corresponding module.
      *
      *
-     * @see \FsSs\Codeception\Module\WebHelper::waitForTextAjax()
+     * @see \QueueApp\Codeception\Module\WebHelper::waitForTextAjax()
      */
     public function waitForTextAjax($selector, $text, $timeout = null) {
         return $this->scenario->runStep(new \Codeception\Step\Action('waitForTextAjax', func_get_args()));
@@ -2145,7 +2145,7 @@ class WebGuy extends \Codeception\Actor
      * [!] Method is generated. Documentation taken from corresponding module.
      *
      *
-     * @see \FsSs\Codeception\Module\WebHelper::switchToIFrameEx()
+     * @see \QueueApp\Codeception\Module\WebHelper::switchToIFrameEx()
      */
     public function switchToIFrameEx($name = null) {
         return $this->scenario->runStep(new \Codeception\Step\Action('switchToIFrameEx', func_get_args()));

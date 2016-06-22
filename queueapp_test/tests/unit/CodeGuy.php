@@ -4,8 +4,8 @@
 // You should not change it manually as it will be overwritten on next build
 // @codingStandardsIgnoreFile
 
-namespace FsSs;
-use FsSs\Codeception\Module\CodeHelper;
+namespace QueueApp;
+use QueueApp\Codeception\Module\CodeHelper;
 
 /**
  * Inherited Methods

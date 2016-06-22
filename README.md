@@ -34,3 +34,9 @@ If you dont have PHPUNIT on your machine, please find the link to install PHPUNI
 
 https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx
 
+#Funtional Test
+
+To test funtional test you may need to install Selenium server and Codeception on your machine.
+
+Find the link here => http://codeception.com/install
+

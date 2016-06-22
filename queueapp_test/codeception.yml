@@ -17,12 +17,3 @@ modules:
             user: ''
             password: ''
             dump: tests/_data/dump.sql
-coverage:
-    enabled: true
-    remote: true
-    whitelist:
-        include:
-            - ../../FS-API/*
-    blacklist:
-        include:
-            - ../../tests/*
