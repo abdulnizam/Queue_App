@@ -1,5 +1,5 @@
 <?php
-require_once '../Config/AppConfig.php';
+require_once dirname(__DIR__).'/Config/AppConfig.php';
 
 class queueAppModel{
 
@@ -27,7 +27,6 @@ class queueAppModel{
         return $this->_db->lastInsertId(); 
 	}
 
-
 	/*
 	* serveCustomer function is used for set the customer is served in the queue.
 	* $id - integer. id of the customer to be served.
@@ -41,8 +40,6 @@ class queueAppModel{
         $stmt->execute(); 
         return true;
 	}
-
-
 
 	/*
 	 * setPriority function is used for move the customer forward/backward in the queue.
@@ -63,7 +60,6 @@ class queueAppModel{
         $stmt->execute(); 
         return true;
 	}
-
 
 	/*
 	 * 

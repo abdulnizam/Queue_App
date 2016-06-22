@@ -25,3 +25,12 @@ CREATE TABLE `customers` (
 
 2) Update the /app/Config/AppConfig.php 
 
+
+#PHPUNIT 
+
+PHPUNIT has written for this App. please install phpunit to run the test.
+
+If you dont have PHPUNIT on your machine, please find the link to install PHPUNIT
+
+https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx
+
