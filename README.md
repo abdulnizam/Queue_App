@@ -3,10 +3,10 @@
 
 DATABASE QUERY 
 
-#To create database
+# To create database
 CREATE DATABASE queueapp;
 
-#To create Table
+# To create Table
 CREATE TABLE `customers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `service_type` int(11) NOT NULL,
@@ -19,14 +19,14 @@ CREATE TABLE `customers` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
-#Steps
+# Steps
 
 1) Execute the query to run the App.
 
 2) Update the /app/Config/AppConfig.php 
 
 
-#PHPUNIT 
+# PHPUNIT 
 
 PHPUNIT has written for this App. please install phpunit to run the test.
 
@@ -34,7 +34,7 @@ If you dont have PHPUNIT on your machine, please find the link to install PHPUNI
 
 https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx
 
-#Funtional Test
+# Funtional Test
 
 To test funtional test you may need to install Selenium server and Codeception on your machine.
 
